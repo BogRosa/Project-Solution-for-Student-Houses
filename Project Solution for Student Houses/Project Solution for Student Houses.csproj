@@ -9,4 +9,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Bunifu.Dataviz.WinForms" Version="2.2.1" />
+    <PackageReference Include="Bunifu.UI.WinForms" Version="6.1.0" />
+    <PackageReference Include="Bunifu.UI.WinForms.NetCore" Version="1.0.1" />
+    <PackageReference Include="Bunifu.Utils" Version="1.0.5" />
+  </ItemGroup>
+
 </Project>
