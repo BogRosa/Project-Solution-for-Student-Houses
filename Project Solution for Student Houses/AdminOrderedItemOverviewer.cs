@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project_Solution_for_Student_Houses
 {
-    public partial class OrderOverviewerAdmin : Form
+    public partial class AdminOrderedItemOverviewer : Form
     {
-        public OrderOverviewerAdmin()
+        public AdminOrderedItemOverviewer()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Project_Solution_for_Student_Houses
 {
-    partial class OrderOverviewerAdmin
+    partial class AdminOrderedItemOverviewer
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,7 @@
             label6 = new Label();
             label23 = new Label();
             label24 = new Label();
+            vScrollBar1 = new VScrollBar();
             groupBox1 = new GroupBox();
             label4 = new Label();
             label3 = new Label();
@@ -78,7 +79,7 @@
             label17.Location = new Point(1647, 801);
             label17.Name = "label17";
             label17.Size = new Size(62, 20);
-            label17.TabIndex = 138;
+            label17.TabIndex = 139;
             label17.Text = "<Total>";
             // 
             // label18
@@ -87,7 +88,7 @@
             label18.Location = new Point(1556, 801);
             label18.Name = "label18";
             label18.Size = new Size(85, 20);
-            label18.TabIndex = 137;
+            label18.TabIndex = 138;
             label18.Text = "Total Items:";
             // 
             // label15
@@ -96,7 +97,7 @@
             label15.Location = new Point(1647, 605);
             label15.Name = "label15";
             label15.Size = new Size(62, 20);
-            label15.TabIndex = 136;
+            label15.TabIndex = 137;
             label15.Text = "<Total>";
             // 
             // label16
@@ -105,7 +106,7 @@
             label16.Location = new Point(1556, 605);
             label16.Name = "label16";
             label16.Size = new Size(85, 20);
-            label16.TabIndex = 135;
+            label16.TabIndex = 136;
             label16.Text = "Total Items:";
             // 
             // label13
@@ -114,7 +115,7 @@
             label13.Location = new Point(1647, 409);
             label13.Name = "label13";
             label13.Size = new Size(62, 20);
-            label13.TabIndex = 134;
+            label13.TabIndex = 135;
             label13.Text = "<Total>";
             // 
             // label14
@@ -123,7 +124,7 @@
             label14.Location = new Point(1556, 409);
             label14.Name = "label14";
             label14.Size = new Size(85, 20);
-            label14.TabIndex = 133;
+            label14.TabIndex = 134;
             label14.Text = "Total Items:";
             // 
             // label12
@@ -132,7 +133,7 @@
             label12.Location = new Point(1647, 213);
             label12.Name = "label12";
             label12.Size = new Size(62, 20);
-            label12.TabIndex = 132;
+            label12.TabIndex = 133;
             label12.Text = "<Total>";
             // 
             // label11
@@ -141,7 +142,7 @@
             label11.Location = new Point(1556, 213);
             label11.Name = "label11";
             label11.Size = new Size(85, 20);
-            label11.TabIndex = 131;
+            label11.TabIndex = 132;
             label11.Text = "Total Items:";
             // 
             // label9
@@ -150,7 +151,7 @@
             label9.Location = new Point(1794, 801);
             label9.Name = "label9";
             label9.Size = new Size(53, 20);
-            label9.TabIndex = 130;
+            label9.TabIndex = 131;
             label9.Text = "<$$$>";
             // 
             // label10
@@ -159,7 +160,7 @@
             label10.Location = new Point(1744, 801);
             label10.Name = "label10";
             label10.Size = new Size(44, 20);
-            label10.TabIndex = 129;
+            label10.TabIndex = 130;
             label10.Text = "Price:";
             // 
             // label7
@@ -168,7 +169,7 @@
             label7.Location = new Point(1794, 605);
             label7.Name = "label7";
             label7.Size = new Size(53, 20);
-            label7.TabIndex = 128;
+            label7.TabIndex = 129;
             label7.Text = "<$$$>";
             // 
             // label8
@@ -177,7 +178,7 @@
             label8.Location = new Point(1744, 605);
             label8.Name = "label8";
             label8.Size = new Size(44, 20);
-            label8.TabIndex = 127;
+            label8.TabIndex = 128;
             label8.Text = "Price:";
             // 
             // label5
@@ -186,7 +187,7 @@
             label5.Location = new Point(1794, 409);
             label5.Name = "label5";
             label5.Size = new Size(53, 20);
-            label5.TabIndex = 126;
+            label5.TabIndex = 127;
             label5.Text = "<$$$>";
             // 
             // label6
@@ -195,7 +196,7 @@
             label6.Location = new Point(1744, 409);
             label6.Name = "label6";
             label6.Size = new Size(44, 20);
-            label6.TabIndex = 125;
+            label6.TabIndex = 126;
             label6.Text = "Price:";
             // 
             // label23
@@ -204,7 +205,7 @@
             label23.Location = new Point(1794, 213);
             label23.Name = "label23";
             label23.Size = new Size(53, 20);
-            label23.TabIndex = 124;
+            label23.TabIndex = 125;
             label23.Text = "<$$$>";
             // 
             // label24
@@ -213,8 +214,15 @@
             label24.Location = new Point(1744, 213);
             label24.Name = "label24";
             label24.Size = new Size(44, 20);
-            label24.TabIndex = 123;
+            label24.TabIndex = 124;
             label24.Text = "Price:";
+            // 
+            // vScrollBar1
+            // 
+            vScrollBar1.Location = new Point(1876, 62);
+            vScrollBar1.Name = "vScrollBar1";
+            vScrollBar1.Size = new Size(26, 962);
+            vScrollBar1.TabIndex = 123;
             // 
             // groupBox1
             // 
@@ -371,32 +379,32 @@
             // homeToolStripMenuItem
             // 
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            homeToolStripMenuItem.Size = new Size(178, 26);
+            homeToolStripMenuItem.Size = new Size(224, 26);
             homeToolStripMenuItem.Text = "Home";
             // 
             // accountToolStripMenuItem
             // 
             accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            accountToolStripMenuItem.Size = new Size(178, 26);
+            accountToolStripMenuItem.Size = new Size(224, 26);
             accountToolStripMenuItem.Text = "Account";
             // 
             // complaintsToolStripMenuItem
             // 
             complaintsToolStripMenuItem.Name = "complaintsToolStripMenuItem";
-            complaintsToolStripMenuItem.Size = new Size(178, 26);
+            complaintsToolStripMenuItem.Size = new Size(224, 26);
             complaintsToolStripMenuItem.Text = "Complaints";
             // 
             // calendarToolStripMenuItem
             // 
             calendarToolStripMenuItem.Name = "calendarToolStripMenuItem";
-            calendarToolStripMenuItem.Size = new Size(178, 26);
+            calendarToolStripMenuItem.Size = new Size(224, 26);
             calendarToolStripMenuItem.Text = "Calendar";
             // 
             // itemCatalogToolStripMenuItem
             // 
             itemCatalogToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { itemCatalogToolStripMenuItem1, addItemsToolStripMenuItem, orderedProductOverviewToolStripMenuItem });
             itemCatalogToolStripMenuItem.Name = "itemCatalogToolStripMenuItem";
-            itemCatalogToolStripMenuItem.Size = new Size(178, 26);
+            itemCatalogToolStripMenuItem.Size = new Size(224, 26);
             itemCatalogToolStripMenuItem.Text = "Item Catalog";
             // 
             // itemCatalogToolStripMenuItem1
@@ -417,7 +425,7 @@
             orderedProductOverviewToolStripMenuItem.Size = new Size(273, 26);
             orderedProductOverviewToolStripMenuItem.Text = "Ordered Products Overview";
             // 
-            // OrderOverviewerAdmin
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -438,6 +446,7 @@
             Controls.Add(label6);
             Controls.Add(label23);
             Controls.Add(label24);
+            Controls.Add(vScrollBar1);
             Controls.Add(groupBox1);
             Controls.Add(textBox5);
             Controls.Add(listBox4);
@@ -449,9 +458,8 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(menuStrip1);
-            Name = "OrderOverviewerAdmin";
+            Name = "Form1";
             Text = "Form1";
-            Load += this.OrderOverviewerAdmin_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             menuStrip1.ResumeLayout(false);
@@ -478,6 +486,7 @@
         private Label label6;
         private Label label23;
         private Label label24;
+        private VScrollBar vScrollBar1;
         private GroupBox groupBox1;
         private Label label4;
         private Label label3;
