@@ -34,17 +34,17 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            radioButton1 = new RadioButton();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            chkAnonymous = new RadioButton();
+            txtTitle = new TextBox();
+            txtDescription = new TextBox();
+            dateTimeOccurred = new DateTimePicker();
             label5 = new Label();
             panelAside = new Panel();
+            bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(components);
             bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(components);
             bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            submitComplaint = new Bunifu.Framework.UI.BunifuThinButton2();
             panelAside.SuspendLayout();
             SuspendLayout();
             // 
@@ -90,46 +90,46 @@
             label4.TabIndex = 3;
             label4.Text = "Would you like your complain to be anonymous?";
             // 
-            // radioButton1
+            // chkAnonymous
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButton1.Location = new Point(1091, 147);
-            radioButton1.Margin = new Padding(3, 4, 3, 4);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(97, 44);
-            radioButton1.TabIndex = 4;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Yes";
-            radioButton1.UseVisualStyleBackColor = true;
+            chkAnonymous.AutoSize = true;
+            chkAnonymous.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            chkAnonymous.Location = new Point(1091, 147);
+            chkAnonymous.Margin = new Padding(3, 4, 3, 4);
+            chkAnonymous.Name = "chkAnonymous";
+            chkAnonymous.Size = new Size(97, 44);
+            chkAnonymous.TabIndex = 4;
+            chkAnonymous.TabStop = true;
+            chkAnonymous.Text = "Yes";
+            chkAnonymous.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtTitle
             // 
-            textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(409, 215);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(767, 55);
-            textBox1.TabIndex = 5;
+            txtTitle.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTitle.Location = new Point(409, 215);
+            txtTitle.Margin = new Padding(3, 4, 3, 4);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(767, 55);
+            txtTitle.TabIndex = 5;
             // 
-            // textBox2
+            // txtDescription
             // 
-            textBox2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(281, 354);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(895, 264);
-            textBox2.TabIndex = 6;
+            txtDescription.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDescription.Location = new Point(281, 354);
+            txtDescription.Margin = new Padding(3, 4, 3, 4);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(895, 264);
+            txtDescription.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dateTimeOccurred
             // 
-            dateTimePicker1.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.Location = new Point(729, 667);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(447, 52);
-            dateTimePicker1.TabIndex = 7;
+            dateTimeOccurred.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimeOccurred.Location = new Point(729, 667);
+            dateTimeOccurred.Margin = new Padding(3, 4, 3, 4);
+            dateTimeOccurred.Name = "dateTimeOccurred";
+            dateTimeOccurred.Size = new Size(447, 52);
+            dateTimeOccurred.TabIndex = 7;
             // 
             // label5
             // 
@@ -152,6 +152,31 @@
             panelAside.Name = "panelAside";
             panelAside.Size = new Size(1438, 123);
             panelAside.TabIndex = 12;
+            // 
+            // bunifuThinButton23
+            // 
+            bunifuThinButton23.ActiveBorderThickness = 3;
+            bunifuThinButton23.ActiveCornerRadius = 20;
+            bunifuThinButton23.ActiveFillColor = Color.FromArgb(120, 63, 142);
+            bunifuThinButton23.ActiveForecolor = Color.FromArgb(191, 172, 200);
+            bunifuThinButton23.ActiveLineColor = Color.FromArgb(120, 63, 142);
+            bunifuThinButton23.BackColor = Color.FromArgb(120, 63, 142);
+            bunifuThinButton23.BackgroundImage = (Image)resources.GetObject("bunifuThinButton23.BackgroundImage");
+            bunifuThinButton23.ButtonText = "Log Out";
+            bunifuThinButton23.Cursor = Cursors.SizeAll;
+            bunifuThinButton23.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            bunifuThinButton23.ForeColor = Color.FromArgb(120, 63, 142);
+            bunifuThinButton23.IdleBorderThickness = 3;
+            bunifuThinButton23.IdleCornerRadius = 20;
+            bunifuThinButton23.IdleFillColor = Color.White;
+            bunifuThinButton23.IdleForecolor = Color.FromArgb(120, 63, 142);
+            bunifuThinButton23.IdleLineColor = Color.FromArgb(120, 63, 142);
+            bunifuThinButton23.Location = new Point(1091, 7);
+            bunifuThinButton23.Margin = new Padding(8, 7, 8, 7);
+            bunifuThinButton23.Name = "bunifuThinButton23";
+            bunifuThinButton23.Size = new Size(294, 94);
+            bunifuThinButton23.TabIndex = 15;
+            bunifuThinButton23.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // bunifuDragControl1
             // 
@@ -189,55 +214,29 @@
             bunifuThinButton21.TabIndex = 13;
             bunifuThinButton21.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // bunifuThinButton22
+            // submitComplaint
             // 
-            bunifuThinButton22.ActiveBorderThickness = 3;
-            bunifuThinButton22.ActiveCornerRadius = 20;
-            bunifuThinButton22.ActiveFillColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton22.ActiveForecolor = Color.White;
-            bunifuThinButton22.ActiveLineColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton22.BackColor = Color.FromArgb(191, 172, 200);
-            bunifuThinButton22.BackgroundImage = (Image)resources.GetObject("bunifuThinButton22.BackgroundImage");
-            bunifuThinButton22.ButtonText = "Submit Complaint";
-            bunifuThinButton22.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            bunifuThinButton22.ForeColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton22.IdleBorderThickness = 3;
-            bunifuThinButton22.IdleCornerRadius = 20;
-            bunifuThinButton22.IdleFillColor = Color.White;
-            bunifuThinButton22.IdleForecolor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton22.IdleLineColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton22.Location = new Point(473, 752);
-            bunifuThinButton22.Margin = new Padding(7, 8, 7, 8);
-            bunifuThinButton22.Name = "bunifuThinButton22";
-            bunifuThinButton22.Size = new Size(459, 94);
-            bunifuThinButton22.TabIndex = 14;
-            bunifuThinButton22.TextAlign = ContentAlignment.MiddleCenter;
-            bunifuThinButton22.Click += bunifuThinButton22_Click;
-            // 
-            // bunifuThinButton23
-            // 
-            bunifuThinButton23.ActiveBorderThickness = 3;
-            bunifuThinButton23.ActiveCornerRadius = 20;
-            bunifuThinButton23.ActiveFillColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton23.ActiveForecolor = Color.FromArgb(191, 172, 200);
-            bunifuThinButton23.ActiveLineColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton23.BackColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton23.BackgroundImage = (Image)resources.GetObject("bunifuThinButton23.BackgroundImage");
-            bunifuThinButton23.ButtonText = "Log Out";
-            bunifuThinButton23.Cursor = Cursors.SizeAll;
-            bunifuThinButton23.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            bunifuThinButton23.ForeColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton23.IdleBorderThickness = 3;
-            bunifuThinButton23.IdleCornerRadius = 20;
-            bunifuThinButton23.IdleFillColor = Color.White;
-            bunifuThinButton23.IdleForecolor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton23.IdleLineColor = Color.FromArgb(120, 63, 142);
-            bunifuThinButton23.Location = new Point(1091, 7);
-            bunifuThinButton23.Margin = new Padding(8, 7, 8, 7);
-            bunifuThinButton23.Name = "bunifuThinButton23";
-            bunifuThinButton23.Size = new Size(294, 94);
-            bunifuThinButton23.TabIndex = 15;
-            bunifuThinButton23.TextAlign = ContentAlignment.MiddleCenter;
+            submitComplaint.ActiveBorderThickness = 3;
+            submitComplaint.ActiveCornerRadius = 20;
+            submitComplaint.ActiveFillColor = Color.FromArgb(120, 63, 142);
+            submitComplaint.ActiveForecolor = Color.White;
+            submitComplaint.ActiveLineColor = Color.FromArgb(120, 63, 142);
+            submitComplaint.BackColor = Color.FromArgb(191, 172, 200);
+            submitComplaint.BackgroundImage = (Image)resources.GetObject("submitComplaint.BackgroundImage");
+            submitComplaint.ButtonText = "Submit Complaint";
+            submitComplaint.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            submitComplaint.ForeColor = Color.FromArgb(120, 63, 142);
+            submitComplaint.IdleBorderThickness = 3;
+            submitComplaint.IdleCornerRadius = 20;
+            submitComplaint.IdleFillColor = Color.White;
+            submitComplaint.IdleForecolor = Color.FromArgb(120, 63, 142);
+            submitComplaint.IdleLineColor = Color.FromArgb(120, 63, 142);
+            submitComplaint.Location = new Point(473, 752);
+            submitComplaint.Margin = new Padding(7, 8, 7, 8);
+            submitComplaint.Name = "submitComplaint";
+            submitComplaint.Size = new Size(459, 94);
+            submitComplaint.TabIndex = 14;
+            submitComplaint.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Complaints
             // 
@@ -245,13 +244,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(191, 172, 200);
             ClientSize = new Size(1438, 895);
-            Controls.Add(bunifuThinButton22);
+            Controls.Add(submitComplaint);
             Controls.Add(bunifuThinButton21);
             Controls.Add(label5);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(radioButton1);
+            Controls.Add(dateTimeOccurred);
+            Controls.Add(txtDescription);
+            Controls.Add(txtTitle);
+            Controls.Add(chkAnonymous);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -272,16 +271,16 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private RadioButton radioButton1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private DateTimePicker dateTimePicker1;
+        private RadioButton chkAnonymous;
+        private TextBox txtTitle;
+        private TextBox txtDescription;
+        private DateTimePicker dateTimeOccurred;
         private Label label5;
         private Panel panelAside;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 submitComplaint;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
     }
 }
